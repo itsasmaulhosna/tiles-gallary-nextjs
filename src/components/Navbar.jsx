@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="hidden md:flex">
           <Link
             href={"/login"}
-            className="bg-blue-950 px-4 py-2 text-white rounded-md"
+            className="bg-sky-950 px-4 py-2 text-white rounded-md"
           >
             Log In
           </Link>
