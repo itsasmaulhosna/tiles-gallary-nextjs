@@ -1,4 +1,4 @@
-import { Card } from "@heroui/react";
+import { Card, Chip } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,6 +14,7 @@ const TilesCard = ({ tile }) => {
           fill
           className="object-cover group-hover:scale-105 transition duration-300"
         />
+                <Chip size="sm" className="absolute top-2 right-2">{tile.category}</Chip>
       </div>
 
       {/* Content */}
@@ -27,7 +28,7 @@ const TilesCard = ({ tile }) => {
         </p>
 
         {/* Button */}
-        <Link href={`/tiles/${tile.id}`} className="mt-3">
+        <Link href={`/all-tiles/${tile.id}`} className="mt-3">
           <button className="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition">
             View Details
           </button>
