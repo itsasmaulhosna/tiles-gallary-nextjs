@@ -9,7 +9,6 @@ export default function Home() {
     <div>
       <Banner></Banner>
       <TilesGallary></TilesGallary>
-      <Footer></Footer>
     </div>
   );
 }
