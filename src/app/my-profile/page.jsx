@@ -8,7 +8,7 @@ const ProfilePage = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const getUser = async () => {
+    const getUser = async () => {t
       const { data } = await authClient.getSession();
       setUser(data?.user);
     };
