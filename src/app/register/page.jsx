@@ -61,7 +61,9 @@ const RegisterPage = () => {
   {errors.password && <p className='text-red-500'>{errors.password.message}</p>}
 
 </fieldset>
+<Link href={'/login'}>
 <button className="btn w-full bg-slate-800 text-white mt-4">Register</button>
+</Link>
                 </form>
                 
             </div>
