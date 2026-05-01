@@ -24,7 +24,7 @@ const RegisterPage = () => {
             email: email,
             password: password,
             image: photo,
-            callbackURL: '/my-profile' // 🔥 IMPORTANT
+            callbackURL: '/my-profile' 
         });
 
         if (error) {
@@ -36,7 +36,7 @@ const RegisterPage = () => {
             alert('Signup successfully');
 
             
-            router.push('/my-profile');
+            router.push('/login');
         }
     };
 
@@ -52,7 +52,7 @@ const RegisterPage = () => {
                         <legend>Name</legend>
                         <input
                             type="text"
-                            className="input"
+                            className="input w-full"
                             {...register("name", { required: 'Name is required' })}
                             placeholder="Enter Your Name"
                         />
@@ -64,7 +64,7 @@ const RegisterPage = () => {
                         <legend>Photo URL</legend>
                         <input
                             type="text"
-                            className="input"
+                            className="input w-full"
                             {...register("photo", { required: 'Photo is required' })}
                             placeholder="Enter Photo URL"
                         />
@@ -75,7 +75,7 @@ const RegisterPage = () => {
                         <legend>Email</legend>
                         <input
                             type="email"
-                            className="input"
+                            className="input w-full"
                             {...register("email", { required: 'Email is required' })}
                             placeholder="Enter Email"
                         />
@@ -87,12 +87,12 @@ const RegisterPage = () => {
                         <legend>Password</legend>
                         <input
                             type={isShow ? "text" : "password"}
-                            className="input"
+                            className="input w-full"
                             {...register("password", { required: 'Password is required' })}
                             placeholder="Enter Password"
                         />
                         <span
-                            className='absolute top-8 right-5 cursor-pointer'
+                            className='absolute top-3 right-5 cursor-pointer'
                             onClick={() => setShow(!isShow)}
                         >
                             {isShow ? <FaEye /> : <FaEyeSlash />}
@@ -103,7 +103,7 @@ const RegisterPage = () => {
                     
                     <button
                         type="submit"
-                        className="btn w-full bg-slate-800 text-white mt-4"
+                        className="btn w-full bg-slate-800 text-white mt-4 rounded-md"
                     >
                         Register
                     </button>
