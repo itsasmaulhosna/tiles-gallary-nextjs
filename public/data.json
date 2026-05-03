@@ -55,7 +55,8 @@
     "id": "tile_005",
     "title": "Black Stone Tile",
     "description": "Dark premium stone look tile for luxury spaces",
-        "image": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+"image": "https://images.unsplash.com/photo-1588854337115-1c67d9247e4d"
+
 ,
     "category": "stone",
     "price": 75.0,
@@ -68,7 +69,8 @@
     "id": "tile_006",
     "title": "Golden Luxury Tile",
     "description": "Elegant golden finish decorative tile",
-    "image": "https://images.unsplash.com/photo-1493666438817-866a91353ca9",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+,
     "category": "luxury",
     "price": 120.0,
     "currency": "USD",
