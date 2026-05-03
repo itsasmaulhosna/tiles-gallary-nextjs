@@ -2,7 +2,8 @@ import React from 'react';
 import TilesCard from './shared/TilesCard';
 
 const TilesGallary = async() => {
-    const res=await fetch('https://tiles-gallary-nextjs.vercel.app/data.json')
+    const res=await fetch('https://tiles-gallary-nextjs.vercel.app/data.json',{ cache: "no-store" }
+)
     const tiles=await res.json()
     const topTiles=tiles.slice(0,4)
     console.log(topTiles)

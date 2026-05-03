@@ -3,7 +3,8 @@ import React from "react";
 import AllTilesClient from "./AllTilesClient";
 
 const AllTiles = async () => {
-  const res = await fetch("https://tiles-gallary-nextjs.vercel.app/data.json");
+  const res = await fetch("https://tiles-gallary-nextjs.vercel.app/data.json",{ cache: "no-store" }
+);
   const tiles = await res.json();
 
   return (
