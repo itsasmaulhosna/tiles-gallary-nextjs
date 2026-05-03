@@ -20,7 +20,7 @@ const Loginpage = () => {
             email: data.email,
             password: data.password,
             rememberMe: true,
-            callbackURL: '/my-profile' // better UX
+            callbackURL: '/' 
         });
 
         if (error) {
@@ -37,7 +37,7 @@ const Loginpage = () => {
     const handleGoogleLogin = async () => {
         await authClient.signIn.social({
             provider: "google",
-            callbackURL: "/my-profile"
+            callbackURL: "/"
         });
     };
 

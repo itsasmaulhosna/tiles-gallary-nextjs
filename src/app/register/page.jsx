@@ -24,7 +24,7 @@ const RegisterPage = () => {
             email: email,
             password: password,
             image: photo,
-            callbackURL: '/my-profile' 
+            callbackURL: '/login' 
         });
 
         if (error) {
